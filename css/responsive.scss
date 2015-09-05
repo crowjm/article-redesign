@@ -1,0 +1,73 @@
+/*HEADER, ASIDE, FOOTER CHANGES*/
+@media screen and (min-width: 550px) {
+/*HEADER*/
+.logo-search{
+	overflow: hidden;
+	h2, input {
+		float: left;
+		width: 45%;
+	}
+	h2 {
+		margin-right: 5%;
+	}
+	input {
+		margin-left: 5%;
+	}
+}
+
+/*ASIDE*/
+aside {
+	overflow: hidden; 
+	.headlines, .related {
+		float: left;
+		width: 45%;
+	}
+	.headlines {
+		margin-right: 5%;
+	}
+	.related {
+		margin-left: 5%;
+	}
+}
+
+/*FOOTER*/
+footer {
+	overflow: hidden;
+	.footer-nav, .secondary-footer-nav {
+		float: left;
+		width: 30%;
+	}
+	/*^need to add third column in html, then add here*/
+	.secondary-footer-nav {
+		margin-right: 4.5%;
+		margin-left: 4.5%;
+	}
+}
+	
+}
+
+
+/*ARTICLE AND ASIDE CHANGES*/
+@media screen and (min-width: 1000px) {
+	.main-content, aside {
+		float: left;
+	}
+	.main-content {
+		width: 70%;
+	}
+	aside {
+		width: 20%;
+		margin-left: 5%;
+		.headlines, .related {
+			float: none;
+			width: 100%;
+		}
+		.headlines {
+			margin-right: 0;
+		}
+		.related {
+			margin-left: 0;
+		}
+	}
+
+}

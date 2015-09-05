@@ -1,0 +1,85 @@
+/*GENERAL*/
+.wrapper {
+	width: 90%;
+	max-width: 1100px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+img {
+	width: 100%;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+
+/*HEADER*/
+header {
+	margin-bottom: 2rem;
+}
+
+.header-nav {
+	overflow-y: hidden;
+	overflow-x: scroll;
+	/*^need to get scroll working*/
+	ul {
+		display: inline-block;
+		li {
+			display: inline-block;
+			margin-right: 10px;
+		}
+		li:last-of-type {
+			margin-right: 0;
+		}
+	}
+}
+
+
+/*ARTICLE*/
+.date {
+	font-size: 0.75rem;
+	margin-top: 0.5rem;
+}
+
+.author {
+	font-size: 1rem;
+	margin-top: 0.25rem;
+}
+
+article {
+	margin-top: 1.25rem;
+	margin-bottom: 2rem;
+	max-width: 725px;
+}
+
+
+/*ASIDE*/
+aside {
+	margin-bottom: 2.5rem;
+}
+
+.headlines {
+	margin-bottom: 1.25rem;
+}
+
+.headlines h2, .related h2 {
+	text-transform: uppercase;
+}
+
+.headlines li, .related li {
+	margin-bottom: 0.4rem;
+}
+
+.headlines li:last-of-type, .related li:last-of-type {
+	margin-bottom: 0;
+}
+
+
+/*FOOTER*/
+footer {
+	clear: both;
+}
+
+.footer-nav, .secondary-footer-nav {
+	margin-bottom: 1.5rem;
+}
