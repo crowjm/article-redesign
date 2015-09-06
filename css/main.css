@@ -137,8 +137,9 @@ header {
   width: 90%;
   margin-right: auto;
   margin-left: auto; }
-  .logo-search-wrapper h2 {
-    margin-bottom: 1rem; }
+  .logo-search-wrapper .wordmark {
+    margin-bottom: 1rem;
+    width: 300px; }
   .logo-search-wrapper .move-input {
     margin-bottom: 1rem;
     padding-top: 0.475rem; }
@@ -243,13 +244,13 @@ footer {
   /*HEADER*/
   .logo-search-wrapper {
     overflow: hidden; }
-    .logo-search-wrapper h2, .logo-search-wrapper .move-input {
+    .logo-search-wrapper .wordmark-wrapper, .logo-search-wrapper .move-input {
       float: left;
       width: 45%; }
-    .logo-search-wrapper h2 {
+    .logo-search-wrapper .wordmark {
       margin-right: 5%;
       margin-bottom: 0;
-      padding-top: 0.35rem; }
+      padding-top: 0.7rem; }
     .logo-search-wrapper .move-input {
       margin-left: 5%;
       text-align: right; }
