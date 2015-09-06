@@ -1,4 +1,4 @@
-/*HEADER, ASIDE, FOOTER CHANGES*/
+/*HEADER, ASIDE, FOOTER, ARTICLE IMG CHANGES*/
 @media screen and (min-width: 550px) {
 /*HEADER*/
 .logo-search-wrapper{
@@ -15,6 +15,15 @@
 	.move-input {
 		margin-left: 5%;
 		text-align: right;
+	}
+}
+
+/*ARTICLE*/
+article {
+	.leslie {
+		float: left;
+		width: 50%;
+		margin-right: 5%;
 	}
 }
 
