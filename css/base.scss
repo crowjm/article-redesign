@@ -12,25 +12,79 @@ img {
 	margin-bottom: 0.5rem;
 }
 
+a {
+	text-decoration: none;
+}
+
 
 /*HEADER*/
 header {
 	margin-bottom: 2rem;
+	border-bottom: 2px solid $header;
 }
 
 .header-nav {
-	overflow-y: hidden;
-	overflow-x: scroll;
-	/*^need to get scroll working*/
+	 width: 100%;
+ 	 white-space: nowrap;
+  	 overflow-y: hidden;
+ 	 overflow-x: scroll;
+ 	 -webkit-overflow-scrolling: touch;
 	ul {
 		display: inline-block;
 		li {
 			display: inline-block;
-			margin-right: 10px;
+			margin-right: 20px;
 		}
 		li:last-of-type {
 			margin-right: 0;
 		}
+	}
+}
+
+.logo-search-bg {
+	background-color: lighten($header, 35%);
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+.logo-search-wrapper {
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+	h2 {
+		margin-bottom: 1rem;
+	}
+	.move-input {
+		margin-bottom: 1rem;
+		padding-top: 0.475rem;
+		input {
+			border: 2px solid #555;
+			width: 280px;
+			height: 30px;
+		}	
+	}
+}
+
+.header-nav-wrapper {
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 0.5rem;
+	padding-top: 0.5rem;
+}
+
+
+/*STICKY HEADER*/
+.fixed {
+	position: fixed;
+	top: 0;
+	background-color: white;
+	border-bottom: 2px solid $header;
+	width: 100%;
+	nav {
+		width: 90%;
+		margin-right: auto;
+		margin-left: auto;
 	}
 }
 
@@ -50,6 +104,22 @@ article {
 	margin-top: 1.25rem;
 	margin-bottom: 2rem;
 	max-width: 725px;
+	p {
+		margin-bottom: 1rem;
+	}
+}
+
+.share {
+	margin-top: 0.5rem;
+	img {
+		width: 20px;
+		margin-right: 10px;
+	}
+	img:last-of-type{
+		width: 30px;
+		margin-right: 0px;
+		margin-left: -9px;
+	}
 }
 
 
@@ -78,8 +148,37 @@ aside {
 /*FOOTER*/
 footer {
 	clear: both;
+	border-top: 2px solid $header;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	background-color: lighten($header, 35%);
+	a {
+		font-size: 0.9rem;
+		line-height: 0.75;
+	}
+}
+
+.footer-wrapper {
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .footer-nav, .secondary-footer-nav {
-	margin-bottom: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+
+.social-copyright {
+	.social-icons {
+		img {
+			width: 30px;
+			margin-right: 20px;
+		}
+		img:last-of-type {
+			margin-right: 0;
+		}
+	}
+	p {
+		font-size: 0.9rem;
+	}
 }

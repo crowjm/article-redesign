@@ -2,6 +2,9 @@ $h-font-family: "news-gothic-std", sans-serif;
 $body-font-family: "merriweather", serif;
 $body-text: #333;
 $caption-text: #555;
+$header-text: #111;
+$links: #0288D1;
+$header: #448AFF;
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: $h-font-family;
@@ -15,6 +18,7 @@ h1 {
 
 h2, h3, h4, h5, h6 {
 	font-weight: 400;
+	color: $header-text;
 }
 
 h2 {
@@ -35,12 +39,26 @@ p, a, .caption, li {
 	font-size: 1.1rem;
 }
 
+input {
+	font-family: $body-font-family;
+	font-size: 0.75rem;
+}
+
+input:focus {
+	outline: 0;
+}
+
 p {
 	color: $body-text;
 }
 
 a {
 	font-style: italic;
+	color: $links;
+}
+
+a:hover {
+	color: darken($links, 20%);
 }
 
 .caption {

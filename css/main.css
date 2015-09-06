@@ -54,7 +54,8 @@ h1 {
   font-weight: 700; }
 
 h2, h3, h4, h5, h6 {
-  font-weight: 400; }
+  font-weight: 400;
+  color: #111; }
 
 h2 {
   font-size: 1.75rem; }
@@ -70,11 +71,22 @@ p, a, .caption, li {
   line-height: 1.8;
   font-size: 1.1rem; }
 
+input {
+  font-family: "merriweather", serif;
+  font-size: 0.75rem; }
+
+input:focus {
+  outline: 0; }
+
 p {
   color: #333; }
 
 a {
-  font-style: italic; }
+  font-style: italic;
+  color: #0288D1; }
+
+a:hover {
+  color: #01466c; }
 
 .caption {
   font-weight: 300;
@@ -93,21 +105,65 @@ img {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem; }
 
+a {
+  text-decoration: none; }
+
 /*HEADER*/
 header {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #448AFF; }
 
 .header-nav {
+  width: 100%;
+  white-space: nowrap;
   overflow-y: hidden;
   overflow-x: scroll;
-  /*^need to get scroll working*/ }
+  -webkit-overflow-scrolling: touch; }
   .header-nav ul {
     display: inline-block; }
     .header-nav ul li {
       display: inline-block;
-      margin-right: 10px; }
+      margin-right: 20px; }
     .header-nav ul li:last-of-type {
       margin-right: 0; }
+
+.logo-search-bg {
+  background-color: #f6faff;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem; }
+
+.logo-search-wrapper {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto; }
+  .logo-search-wrapper h2 {
+    margin-bottom: 1rem; }
+  .logo-search-wrapper .move-input {
+    margin-bottom: 1rem;
+    padding-top: 0.475rem; }
+    .logo-search-wrapper .move-input input {
+      border: 2px solid #555;
+      width: 280px;
+      height: 30px; }
+
+.header-nav-wrapper {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem; }
+
+/*STICKY HEADER*/
+.fixed {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  border-bottom: 2px solid #448AFF;
+  width: 100%; }
+  .fixed nav {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto; }
 
 /*ARTICLE*/
 .date {
@@ -122,6 +178,18 @@ article {
   margin-top: 1.25rem;
   margin-bottom: 2rem;
   max-width: 725px; }
+  article p {
+    margin-bottom: 1rem; }
+
+.share {
+  margin-top: 0.5rem; }
+  .share img {
+    width: 20px;
+    margin-right: 10px; }
+  .share img:last-of-type {
+    width: 30px;
+    margin-right: 0px;
+    margin-left: -9px; }
 
 /*ASIDE*/
 aside {
@@ -141,23 +209,46 @@ aside {
 
 /*FOOTER*/
 footer {
-  clear: both; }
+  clear: both;
+  border-top: 2px solid #448AFF;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #f6faff; }
+  footer a {
+    font-size: 0.9rem;
+    line-height: 0.75; }
+
+.footer-wrapper {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto; }
 
 .footer-nav, .secondary-footer-nav {
-  margin-bottom: 1.5rem; }
+  padding-bottom: 1.5rem; }
+
+.social-copyright .social-icons img {
+  width: 30px;
+  margin-right: 20px; }
+.social-copyright .social-icons img:last-of-type {
+  margin-right: 0; }
+.social-copyright p {
+  font-size: 0.9rem; }
 
 /*HEADER, ASIDE, FOOTER CHANGES*/
 @media screen and (min-width: 550px) {
   /*HEADER*/
-  .logo-search {
+  .logo-search-wrapper {
     overflow: hidden; }
-    .logo-search h2, .logo-search input {
+    .logo-search-wrapper h2, .logo-search-wrapper .move-input {
       float: left;
       width: 45%; }
-    .logo-search h2 {
-      margin-right: 5%; }
-    .logo-search input {
-      margin-left: 5%; }
+    .logo-search-wrapper h2 {
+      margin-right: 5%;
+      margin-bottom: 0;
+      padding-top: 0.35rem; }
+    .logo-search-wrapper .move-input {
+      margin-left: 5%;
+      text-align: right; }
 
   /*ASIDE*/
   aside {
@@ -172,9 +263,8 @@ footer {
 
   /*FOOTER*/
   footer {
-    overflow: hidden;
-    /*^need to add third column in html, then add here*/ }
-    footer .footer-nav, footer .secondary-footer-nav {
+    overflow: hidden; }
+    footer .footer-nav, footer .secondary-footer-nav, footer .social-copyright {
       float: left;
       width: 30%; }
     footer .secondary-footer-nav {

@@ -1,17 +1,20 @@
 /*HEADER, ASIDE, FOOTER CHANGES*/
 @media screen and (min-width: 550px) {
 /*HEADER*/
-.logo-search{
+.logo-search-wrapper{
 	overflow: hidden;
-	h2, input {
+	h2, .move-input {
 		float: left;
 		width: 45%;
 	}
 	h2 {
 		margin-right: 5%;
+		margin-bottom: 0;
+		padding-top: 0.35rem;
 	}
-	input {
+	.move-input {
 		margin-left: 5%;
+		text-align: right;
 	}
 }
 
@@ -33,11 +36,10 @@ aside {
 /*FOOTER*/
 footer {
 	overflow: hidden;
-	.footer-nav, .secondary-footer-nav {
+	.footer-nav, .secondary-footer-nav, .social-copyright{
 		float: left;
 		width: 30%;
 	}
-	/*^need to add third column in html, then add here*/
 	.secondary-footer-nav {
 		margin-right: 4.5%;
 		margin-left: 4.5%;
