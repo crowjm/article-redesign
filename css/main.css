@@ -95,6 +95,9 @@ a:hover {
   font-size: 0.8rem;
   line-height: 1.2; }
 
+.header-nav ul ul li a {
+  font-size: 0.9rem; }
+
 /*GENERAL*/
 .wrapper {
   width: 90%;
@@ -120,13 +123,34 @@ header {
   overflow-y: hidden;
   overflow-x: scroll;
   -webkit-overflow-scrolling: touch; }
-  .header-nav ul {
-    display: inline-block; }
-    .header-nav ul li {
-      display: inline-block;
-      margin-right: 20px; }
-    .header-nav ul li:last-of-type {
-      margin-right: 0; }
+
+.header-nav ul {
+  display: inline-block; }
+
+.header-nav ul li {
+  display: inline-block;
+  margin-right: 20px; }
+
+.header-nav ul li:last-of-type {
+  margin-right: 0; }
+
+.header-nav .toggle {
+  opacity: 0; }
+
+.header-nav ul ul {
+  display: none;
+  position: absolute;
+  background-color: white;
+  margin-top: 10px;
+  padding: 10px;
+  margin-left: -5px;
+  box-shadow: 2px 2px 5px #448AFF; }
+
+#show-list4 {
+  margin-left: -90px; }
+
+.header-nav ul ul li {
+  display: block; }
 
 .logo-search-bg {
   background-color: #f6faff;
